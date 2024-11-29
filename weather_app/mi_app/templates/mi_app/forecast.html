@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast Weather</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pronóstico del Clima</h1>
+        <ul>
+            {% for forecast in forecasts %}
+            <li>
+                <strong>Fecha:</strong> {{ forecast.date }}<br>
+                <strong>Temperatura:</strong> {{ forecast.temperature }}°C<br>
+                <strong>Humedad:</strong> {{ forecast.humidity }}%<br>
+                <strong>Descripción:</strong> {{ forecast.description }}
+            </li>
+            {% empty %}
+            <li>No hay datos disponibles.</li>
+            {% endfor %}
+        </ul>
+        <p><a href="/">Regresar a Home</a></p>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Weather App</p>
+    </div>
+</body>
+</html>
