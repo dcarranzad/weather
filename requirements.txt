@@ -163,7 +163,7 @@ python-nvd3==0.15.0
 python-slugify==8.0.1
 pytz==2022.7.1
 pytzdata==2020.1
-pywin32==305
+pywin32
 pywinpty==2.0.12
 PyYAML==6.0
 pyzmq==25.0.2
