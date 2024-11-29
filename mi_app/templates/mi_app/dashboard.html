@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard del Clima</title>
+    <style>
+        /* Establece fuentes modernas y un fondo con un gradiente atractivo */
+        body {
+            font-family: 'Helvetica Neue', 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #83a4d4, #b6fbff);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Configuración central del contenedor */
+        .container {
+            width: 90%;
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            text-align: center;
+            opacity: 0.95;
+        }
+
+        /* Encabezados con estilo */
+        h1 {
+            color: #024873;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        /* Ajuste del contenedor del gráfico para visualizaciones amplias */
+        div.graph-container {
+            margin: 20px 0;
+        }
+
+        /* Estilos para enlaces que parecen botones */
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            padding: 15px 30px;
+            border-radius: 10px;
+            transition: background-color 0.5s, box-shadow 0.5s;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Pie de página con estilo coherente */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f2f2f2;
+            color: #333;
+            border-top: 1px solid #ccc;
+            margin-top: auto;
+        }
+
+        /* Mejoras responsivas para una mejor visualización en móviles */
+        @media (max-width: 768px) {
+            .container {
+                width: 98%;
+                margin: 20px auto;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            a {
+                padding: 12px 24px;
+                font-size: 14px;
+            }
+        }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard del Pronóstico del Clima</h1>
+        <div class="graph-container">
+            {{ graph|safe }}
+        </div>
+        <p><a href="/">Regresar a Home</a></p>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Weather App</p>
+    </footer>
+</body>
+</html>

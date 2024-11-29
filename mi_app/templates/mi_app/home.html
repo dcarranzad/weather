@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Home</title>
+    <style>
+        /* Establece estilos básicos para la página */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e4f0f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Estilos para el contenedor principal */
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Estilos para los encabezados */
+        h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para la lista y enlaces */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        a {
+            display: inline-block;
+            color: white;
+            background-color: #007bff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Estilos para el footer */
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            a {
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a Weather App</h1>
+        <p>Selecciona una de las siguientes opciones:</p>
+        <ul>
+            <li><a href="/weather/forecast/">Ver Pronóstico del Clima</a></li>
+            <li><a href="/weather/dashboard/">Ver Dashboard Interactivo</a></li>
+        </ul>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Weather App</p>
+    </footer>
+</body>
+</html>

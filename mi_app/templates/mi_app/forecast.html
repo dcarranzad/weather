@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronóstico del Clima</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 0;
+            color: #4a4a4a;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        .forecast-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .forecast-item {
+            background-color: #e9efff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        .forecast-item span {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .forecast-date {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .forecast-temp {
+            color: #E57373; /* Red */
+        }
+
+        .forecast-humidity {
+            color: #64B5F6; /* Blue */
+        }
+
+        .forecast-desc {
+            color: #81C784; /* Green */
+        }
+
+        .home-link a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .home-link a:hover {
+            background-color: #0056b3;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            background-color: #e9ecef;
+            color: #333;
+            border-top: 1px solid #d3d3d3;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                margin: 10px auto;
+            }
+            .forecast-item {
+                padding: 10px;
+            }
+            .home-link a {
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pronóstico del Clima</h1>
+        <ul class="forecast-list">
+            {% for forecast in forecasts %}
+            <li class="forecast-item">
+                <span class="forecast-date">Fecha: {{ forecast.date }}</span>
+                <span class="forecast-temp">Temperatura: {{ forecast.temperature }}°C</span>
+                <span class="forecast-humidity">Humedad: {{ forecast.humidity }}%</span>
+                <span class="forecast-desc">Descripción: {{ forecast.description }}</span>
+            </li>
+            {% empty %}
+            <li>No hay datos disponibles.</li>
+            {% endfor %}
+        </ul>
+        <p class="home-link"><a href="/">Regresar a Home</a></p>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Weather App</p>
+    </footer>
+</body>
+</html>

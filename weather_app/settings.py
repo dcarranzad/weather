@@ -23,12 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-sjs_^_6l1wu2*fk(8p!7695c97e#(wz#s)*$0++on485%_oynp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['myappweather-crbgd5c4e9engwhk.canadacentral-01.azurewebsites.net']
+ALLOWED_HOSTS = ['myappweather-crbgd5c4e9engwhk.canadacentral-01.azurewebsites.net', '127.0.0.1']
 
 
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
