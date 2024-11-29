@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-sjs_^_6l1wu2*fk(8p!7695c97e#(wz#s)*$0++on485%_oynp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['myappweather.azurewebsites.net']
+ALLOWED_HOSTS = ['myappweather-crbgd5c4e9engwhk.canadacentral-01.azurewebsites.net']
 
 
 # Application definition
