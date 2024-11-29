@@ -1,20 +1,39 @@
-
-asgiref @ file:///C:/b/abs_ae1n0p_8_w/croot/asgiref_1724072476516/work
-Bottleneck @ file:///C:/b/abs_816hr2khp1/croot/bottleneck_1731058648110/work
-Django @ file:///C:/b/abs_d8jy6px5xv/croot/django_1731616483677/work
+asgiref==3.8.1
+blas==1.0
+bottleneck==1.4.2
+bzip2==1.0.8
+ca-certificates==2024.11.26
+django==5.1.3
+intel-openmp==2023.1.0
+libffi==3.4.4
+mkl==2023.1.0
 mkl-service==2.4.0
-mkl_fft @ file:///C:/Users/dev-admin/mkl/mkl_fft_1730823082242/work
-mkl_random @ file:///C:/Users/dev-admin/mkl/mkl_random_1730822522280/work
-numexpr @ file:///C:/b/abs_05o8p7bfml/croot/numexpr_1730215959182/work
-numpy @ file:///C:/b/abs_0123vcxhf8/croot/numpy_and_numpy_base_1725470331966/work/dist/numpy-2.0.1-cp310-cp310-win_amd64.whl#sha256=e824ec3b279f4c5207736c83ac2f2dc79b489e08501a4ea9e3fc178c45db289b
-packaging @ file:///C:/b/abs_c3vlh0z4jw/croot/packaging_1720101866539/work
-pandas @ file:///C:/b/abs_e18w9ay4we/croot/pandas_1732735115740/work/dist/pandas-2.2.3-cp310-cp310-win_amd64.whl#sha256=6fc0a0523ea4ec3f23a2b790c738c857942b4c579479f8012ac8148d675b8975
-plotly @ file:///C:/b/abs_1014knmz1t/croot/plotly_1726245573566/work
-pyodbc @ file:///C:/b/abs_cbgr1yn8qs/croot/pyodbc_1725560257385/work
-python-dateutil @ file:///C:/b/abs_3au_koqnbs/croot/python-dateutil_1716495777160/work
-pytz @ file:///C:/b/abs_6ap4tsz1ox/croot/pytz_1713974360290/work
-six @ file:///tmp/build/80754af9/six_1644875935023/work
-sqlparse @ file:///C:/b/abs_88361ub_qu/croot/sqlparse_1690904577514/work
-tenacity @ file:///C:/b/abs_1749lsqys6/croot/tenacity_1730304400080/work
-typing_extensions @ file:///C:/b/abs_0as9mdbkfl/croot/typing_extensions_1715268906610/work
-tzdata @ file:///croot/python-tzdata_1690578112552/work
+mkl_fft==1.3.11
+mkl_random==1.2.8
+numexpr==2.10.1
+numpy==2.0.1
+numpy-base==2.0.1
+openssl==3.0.15
+packaging==24.1
+pandas==2.2.3
+pip==24.2
+plotly==5.24.1
+pyodbc==5.1.0
+python==3.10.15
+python-dateutil==2.9.0
+python-tzdata==2023.3
+pytz==2024.1
+setuptools==75.1.0
+six==1.16.0
+sqlite==3.45.3
+sqlparse==0.4.4
+tbb==2021.8.0
+tenacity==9.0.0
+tk==8.6.14
+typing_extensions==4.11.0
+tzdata==2024b
+vc==14.40
+vs2015_runtime==14.40.33807
+wheel==0.44.0
+xz==5.4.6
+zlib==1.2.13
